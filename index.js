@@ -1,4 +1,5 @@
 const express = require("express");
+const path = require("path");
 
 const exphbs = require('express-handlebars');
 const logger = require("./middleware/logger");
@@ -31,7 +32,7 @@ app.get('/', (req, res) => res.render('index', {
 app.use('api/members', require('./routes/api/members'))
 
 app.get("/", (req, res) => {
-  res.send("<h1>Hello there!!!</h1>");
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 const PORT = process.env.PORT || 5000;
