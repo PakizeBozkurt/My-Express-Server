@@ -29,7 +29,7 @@ app.get('/', (req, res) => res.render('index', {
 }));
 
 //Members API Routes
-app.use('api/members', require('./routes/api/members'))
+app.use('api/members/', require('./routes/api/members'))
 
 // app.get("/", (req, res) => {
 //   res.sendFile(path.join(__dirname, 'public', 'index.html'));
