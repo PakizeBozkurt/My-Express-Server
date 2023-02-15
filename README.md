@@ -1,2 +1,2 @@
 # My-Express-Server
-Working out Node.js and Express!
+Understanding Node.js and Express!
